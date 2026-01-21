@@ -82,30 +82,6 @@
                             <a href="#programare" class="btn btn-primary btn-large">Programează-te</a>
                             <a href="#servicii" class="btn btn-secondary btn-large">Vezi serviciile</a>
                         </div>
-                        
-                        <!-- Trust Chips -->
-                        <div class="trust-chips">
-                            <div class="trust-chip">
-                                <i class="fas fa-calendar-check"></i>
-                                <span>Programare rapidă</span>
-                            </div>
-                            <div class="trust-chip">
-                                <i class="fas fa-file-invoice"></i>
-                                <span>Costuri transparente</span>
-                            </div>
-                            <div class="trust-chip">
-                                <i class="fas fa-heartbeat"></i>
-                                <span>Fără stres</span>
-                            </div>
-                            <div class="trust-chip">
-                                <i class="fas fa-microchip"></i>
-                                <span>Tehnologie modernă</span>
-                            </div>
-                            <div class="trust-chip">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Igienă strictă</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -124,11 +100,6 @@
                             <rect x="150" y="40" width="140" height="50" rx="8" fill="white" class="hero-callout callout-2"/>
                             <text x="220" y="65" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1a73e8">Tehnologie modernă</text>
                             <line x1="200" y1="80" x2="200" y2="90" stroke="#1a73e8" stroke-width="2" class="hero-connector connector-2"/>
-                            <!-- Callout 3 -->
-                            <circle cx="300" cy="120" r="8" fill="#1a73e8" class="hero-dot dot-3"/>
-                            <rect x="170" y="140" width="140" height="50" rx="8" fill="white" class="hero-callout callout-3"/>
-                            <text x="240" y="165" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1a73e8">Echipă calmă</text>
-                            <line x1="300" y1="120" x2="310" y2="145" stroke="#1a73e8" stroke-width="2" class="hero-connector connector-3"/>
                         </svg>
                     </div>
                 </div>
@@ -618,7 +589,8 @@
             <p>Îți răspundem cu plăcere la orice întrebare.</p>
             
             <div class="contact-grid">
-                <div class="contact-details">
+                <!-- Contact Information -->
+                <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
@@ -626,21 +598,6 @@
                             <p>Str. Grâului 42, București</p>
                         </div>
                     </div>
-                    
-                    <div class="contact-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.000000000001!2d26.080000000000004!3d44.430000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff89c6c87f8f%3A0x7c9b9b9b9b9b9b9b!2sStrada%20Gr%C3%A2ului%2042%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1600000000000!5m2!1sen!2sro" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-                
-                <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
@@ -655,24 +612,37 @@
                             <p>office@5dent.ro</p>
                         </div>
                     </div>
+                    
+                    <div class="contact-hours">
+                        <h4>Program de lucru</h4>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Luni – Vineri</span>
+                                <span>09:00 – 21:00</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sâmbătă</span>
+                                <span>10:00 – 18:00</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Duminică</span>
+                                <span>Închis</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="contact-hours">
-                <h4>Program de lucru</h4>
-                <div class="hours-list">
-                    <div class="hour-item">
-                        <span>Luni – Vineri</span>
-                        <span>09:00 – 21:00</span>
-                    </div>
-                    <div class="hour-item">
-                        <span>Sâmbătă</span>
-                        <span>10:00 – 18:00</span>
-                    </div>
-                    <div class="hour-item">
-                        <span>Duminică</span>
-                        <span>Închis</span>
-                    </div>
+                
+                <!-- Map -->
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.000000000001!2d26.080000000000004!3d44.430000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff89c6c87f8f%3A0x7c9b9b9b9b9b9b9b!2sStrada%20Gr%C3%A2ului%2042%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1600000000000!5m2!1sen!2sro" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -734,7 +704,7 @@
                     <p>&copy; 2026 5Dent. Toate drepturile rezervate.</p>
                 </div>
                 <div class="footer-powered-by">
-                    <span>Powered by</span>
+                    <span>crafted in the clouds by</span>
                     <img src="skyro-LOGO-6A-final -without tagline-01.png" alt="Sky.ro Logo" class="sky-logo">
                 </div>
                 <div class="footer-links">
