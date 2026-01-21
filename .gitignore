@@ -3,6 +3,3 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
-*.mp4
-*.mov
-*.jpg

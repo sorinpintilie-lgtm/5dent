@@ -92,7 +92,7 @@ html {
     flex-wrap: wrap;
     gap: var(--spacing-sm);
     margin: var(--spacing-lg) 0;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .trust-chip {
@@ -651,6 +651,7 @@ ul {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-top: calc(var(--promo-bar-height) + var(--navbar-height, 80px));
 }
 
 .hero-container {
