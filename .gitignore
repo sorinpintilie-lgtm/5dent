@@ -4,22 +4,25 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Images
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.bmp
-*.svg
-*.webp
+# Exclude large uncompressed files
+# But include the compressed images and videos we're using
 
-# Videos
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.wmv
-*.flv
+# Compressed images used in the website
+!a-closeup-shot-of-a-smiling-woman-showing-her-clea-2026-01-11-08-37-43-utc.jpg
+!a-woman-at-an-appointment-with-a-professional-dent-2026-01-05-05-08-43-utc.jpg
+!close-up-of-young-woman-s-mouth-2026-01-11-09-42-06-utc.jpg
+!dental-tools-medical-equipment-2026-01-07-01-00-49-utc.jpg
+!female-dentist-with-assistant-working-in-dental-cl-2026-01-07-07-00-33-utc.jpg
+!in-a-modern-medical-center-dentistry-checks-the-r-2026-01-05-05-35-48-utc.jpg
+!professional-team-of-dentists-and-assistants-posin-2026-01-07-01-01-37-utc.jpg
+!team-of-young-dentists-with-dental-instruments-in-2026-01-08-21-48-27-utc.jpg
+!with-the-help-of-high-tech-equipment-and-expert-sk-2026-01-05-04-52-49-utc.jpg
+!5dentlogo.png
+!skyro-LOGO-6A-final -without tagline-01.png
+!logo.svg
+
+# Compressed videos used in the website
+!Beautiful-Smile-And-Perfect-Teeth-In-Dental-Clinic-4K-2025-12-17-21-47-45-Utc.mp4
 
 # Compressed files
 compressed/
