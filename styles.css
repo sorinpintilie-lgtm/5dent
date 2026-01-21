@@ -564,6 +564,10 @@ ul {
     background-color: rgba(255, 255, 255, 0.98);
 }
 
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
 .navbar .container {
     display: flex;
     align-items: center;

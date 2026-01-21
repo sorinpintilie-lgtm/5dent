@@ -26,13 +26,27 @@ navLinks.forEach(link => {
     });
 });
 
-// Navbar Scroll Effect
+// Navbar Scroll Effect - Hide when scrolling down, show when scrolling up
+let lastScrollTop = 0;
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > 100) {
         navbar.classList.add('scrolled');
+        
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down - hide navbar
+            navbar.classList.add('hidden');
+        } else {
+            // Scrolling up - show navbar
+            navbar.classList.remove('hidden');
+        }
     } else {
         navbar.classList.remove('scrolled');
+        navbar.classList.remove('hidden');
     }
+    
+    lastScrollTop = scrollTop;
 });
 
 // Back to Top Button
