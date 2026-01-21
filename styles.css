@@ -6,6 +6,9 @@
 }
 
 :root {
+    /* Promo Bar */
+    --promo-bar-height: 40px;
+    
     /* Primary Colors */
     --primary-color: #1a73e8;
     --primary-dark: #1557b0;
