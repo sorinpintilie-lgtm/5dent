@@ -1,0 +1,22 @@
+{
+  "name": "5dent-dental-clinic",
+  "version": "1.0.0",
+  "description": "Modern dental clinic website for 5Dent",
+  "main": "index.html",
+  "scripts": {
+    "build": "powershell -ExecutionPolicy Bypass -File build.ps1",
+    "dev": "python -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "website",
+    "responsive"
+  ],
+  "author": "5Dent",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^3.0.0"
+  }
+}

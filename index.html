@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5Dent - Clinica Stomatologică București | Servicii Dentare Profesionale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.svg" alt="5Dent Logo" class="logo">
+                <span class="brand-name">5Dent</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Acasă</a></li>
+                <li><a href="#servicii" class="nav-link">Servicii</a></li>
+                <li><a href="#despre" class="nav-link">Despre noi</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#testimoniale" class="nav-link">Recenzii</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#programare" class="btn btn-primary">Programare Online</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline poster="a-woman-at-an-appointment-with-a-professional-dent-2026-01-05-05-08-43-utc.jpg">
+                <source src="Beautiful-Smile-And-Perfect-Teeth-In-Dental-Clinic-4K-2025-12-17-21-47-45-Utc.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-content-left">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>10+ ani experiență</span>
+                    </div>
+                    <div class="hero-text-wrapper">
+                        <div class="hero-tagline">
+                            <span>Stomatologie de calitate</span>
+                        </div>
+                        <h1 class="hero-title">Zâmbetul tău, pe mâini sigure.</h1>
+                        <p class="hero-subtitle">Clinică stomatologică în București. Tratamente moderne, explicații clare, fără grabă.</p>
+                        <p class="hero-text">Lucrăm cu tehnologie actuală și o echipă cu experiență, ca să obții rezultate curate și predictibile.</p>
+                    </div>
+                    <div class="hero-actions">
+                        <div class="hero-buttons">
+                            <a href="#programare" class="btn btn-primary btn-large">Programează-te</a>
+                            <a href="#servicii" class="btn btn-secondary btn-large">Vezi serviciile</a>
+                        </div>
+                        
+                        <!-- Trust Chips -->
+                        <div class="trust-chips">
+                            <div class="trust-chip">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Programare rapidă</span>
+                            </div>
+                            <div class="trust-chip">
+                                <i class="fas fa-file-invoice"></i>
+                                <span>Costuri transparente</span>
+                            </div>
+                            <div class="trust-chip">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Fără stres</span>
+                            </div>
+                            <div class="trust-chip">
+                                <i class="fas fa-microchip"></i>
+                                <span>Tehnologie modernă</span>
+                            </div>
+                            <div class="trust-chip">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Igienă strictă</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content with Animated Path -->
+                <div class="hero-content-right">
+                    <div class="hero-svg-container">
+                        <svg viewBox="0 0 400 300" class="hero-svg">
+                            <path d="M 50 150 Q 200 50 350 150" stroke="#1a73e8" stroke-width="3" fill="none" stroke-linecap="round" class="hero-path"/>
+                            <!-- Callout 1 -->
+                            <circle cx="100" cy="120" r="8" fill="#1a73e8" class="hero-dot dot-1"/>
+                            <rect x="110" y="100" width="120" height="50" rx="8" fill="white" class="hero-callout callout-1"/>
+                            <text x="170" y="120" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1a73e8">Fără stres</text>
+                            <line x1="110" y1="125" x2="100" y2="120" stroke="#1a73e8" stroke-width="2" class="hero-connector connector-1"/>
+                            <!-- Callout 2 -->
+                            <circle cx="200" cy="80" r="8" fill="#1a73e8" class="hero-dot dot-2"/>
+                            <rect x="150" y="40" width="140" height="50" rx="8" fill="white" class="hero-callout callout-2"/>
+                            <text x="220" y="65" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1a73e8">Tehnologie modernă</text>
+                            <line x1="200" y1="80" x2="200" y2="90" stroke="#1a73e8" stroke-width="2" class="hero-connector connector-2"/>
+                            <!-- Callout 3 -->
+                            <circle cx="300" cy="120" r="8" fill="#1a73e8" class="hero-dot dot-3"/>
+                            <rect x="170" y="140" width="140" height="50" rx="8" fill="white" class="hero-callout callout-3"/>
+                            <text x="240" y="165" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1a73e8">Echipă calmă</text>
+                            <line x1="300" y1="120" x2="310" y2="145" stroke="#1a73e8" stroke-width="2" class="hero-connector connector-3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#servicii" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicii" class="services bg-grid">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Serviciile Noastre</span>
+                <h2 class="section-title">Servicii complete pentru sănătatea zâmbetului</h2>
+                <p class="section-description">De la prevenție la tratamente complexe, îți recomandăm exact ce ai nevoie — nimic în plus.</p>
+            </div>
+            
+            <div class="services-bento">
+                <!-- Featured Service -->
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Implantologie</h3>
+                    <p>Implanturi dentare stabile, cu aspect natural. Planificare atentă și soluții pe termen lung.</p>
+                    <div class="service-benefit">
+                        <i class="fas fa-check"></i>
+                        <span>Rezultate durabile</span>
+                    </div>
+                    <a href="#programare" class="service-link">Află mai mult <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Smaller Service Cards -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Odontoterapie</h3>
+                    <p>Tratamente moderne pentru cariile și refaceri estetice.</p>
+                    <div class="service-benefit">
+                        <i class="fas fa-check"></i>
+                        <span>Fără durere & rapid</span>
+                    </div>
+                    <a href="#programare" class="service-link">Află mai mult <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Endodonție</h3>
+                    <p>Tratamente de canal sub magnificație.</p>
+                    <div class="service-benefit">
+                        <i class="fas fa-check"></i>
+                        <span>Precizie maximă</span>
+                    </div>
+                    <a href="#programare" class="service-link">Află mai mult <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Parodontologie</h3>
+                    <p>Prevenție și tratament pentru gingivită.</p>
+                    <div class="service-benefit">
+                        <i class="fas fa-check"></i>
+                        <span>Gingii sănătoase</span>
+                    </div>
+                    <a href="#programare" class="service-link">Află mai mult <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-braille"></i>
+                    </div>
+                    <h3>Ortodonție</h3>
+                    <p>Aparate fixe sau alignere invizibile.</p>
+                    <div class="service-benefit">
+                        <i class="fas fa-check"></i>
+                        <span>Zâmbet perfect</span>
+                    </div>
+                    <a href="#programare" class="service-link">Află mai mult <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <p>Nu știi ce ți se potrivește? Programează o consultație.</p>
+                <a href="#programare" class="btn btn-primary">Programează consultația</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section id="proof" class="proof bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">De ce să alegi 5Dent?</h2>
+                <p class="section-description">Date și promisiuni rezonabile, fără exagerări.</p>
+            </div>
+            
+            <div class="proof-grid">
+                <div class="proof-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Pacienți mulțumiți</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Medici specializați</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">14+</span>
+                        <span class="stat-label">Ani experiență</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfație clienti</span>
+                    </div>
+                </div>
+                <div class="proof-promise">
+                    <div class="promise-card">
+                        <div class="promise-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Promisiunea noastră</h3>
+                        <p>Plan clar. Costuri transparente. Rezultate predictibile.</p>
+                        <div class="promise-features">
+                            <div class="promise-item">
+                                <i class="fas fa-check"></i>
+                                <span>Consultanță gratuită</span>
+                            </div>
+                            <div class="promise-item">
+                                <i class="fas fa-check"></i>
+                                <span>Oferte personalizate</span>
+                            </div>
+                            <div class="promise-item">
+                                <i class="fas fa-check"></i>
+                                <span>Garanție pentru servicii</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="despre" class="about bg-about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="professional-team-of-dentists-and-assistants-posin-2026-01-07-01-01-37-utc.jpg" alt="Echipă 5Dent">
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Despre Noi</span>
+                    <h2>Despre 5Dent</h2>
+                    <p class="about-text">Clinica ta din București pentru tratamente sigure și confortabile. De peste 14 ani, tratăm atât cazuri simple, cât și situații complexe, cu un plan clar și comunicare directă. Punem accent pe diagnostic corect, execuție precisă și rezultate durabile.</p>
+                    <div class="about-badges">
+                        <div class="badge">
+                            <i class="fas fa-clock"></i>
+                            <span>Urgențe</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-users"></i>
+                            <span>Echipă expertă</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-microchip"></i>
+                            <span>Tehnologie modernă</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Plată în rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Process Timeline -->
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-step-number">1</div>
+                    <h4 class="process-step-title">Consultație</h4>
+                    <p class="process-step-description">Evaluăm starea orală, identificăm nevoile și discutăm opțiunile.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">2</div>
+                    <h4 class="process-step-title">Plan personalizat</h4>
+                    <p class="process-step-description">Îți prezentăm un plan clar de tratament cu costuri și durată estimată.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">3</div>
+                    <h4 class="process-step-title">Tratament</h4>
+                    <p class="process-step-description">Executăm procedurile cu atenție maximă și confort pentru tine.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">4</div>
+                    <h4 class="process-step-title">Follow-up</h4>
+                    <p class="process-step-description">Rămânem alături după tratament pentru sănătatea durabilă a zâmbetului.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery bg-dots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Galerie</span>
+                <h2 class="section-title">Clinica în imagini</h2>
+                <p class="section-description">Spațiu modern, curat, gândit pentru confort și siguranță.</p>
+            </div>
+            
+            <div class="gallery-masonry">
+                <div class="gallery-item large">
+                    <img src="a-woman-at-an-appointment-with-a-professional-dent-2026-01-05-05-08-43-utc.jpg" alt="Recepție & zonă de așteptare">
+                    <div class="gallery-caption">
+                        <h4>Recepție</h4>
+                        <p>Zonă de așteptare modernă</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="female-dentist-with-assistant-working-in-dental-cl-2026-01-07-07-00-33-utc.jpg" alt="Cabinete și echipamente">
+                    <div class="gallery-caption">
+                        <h4>Cabinet</h4>
+                        <p>Echipamente avansate</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dental-tools-medical-equipment-2026-01-07-01-00-49-utc.jpg" alt="Detalii din timpul tratamentelor">
+                    <div class="gallery-caption">
+                        <h4>Instrumente</h4>
+                        <p>Tehnologie de ultimă oră</p>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="team-of-young-dentists-with-dental-instruments-in-2026-01-08-21-48-27-utc.jpg" alt="Echipa 5Dent">
+                    <div class="gallery-caption">
+                        <h4>Echipă</h4>
+                        <p>Profesioniști dedicat</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="close-up-of-young-woman-s-mouth-2026-01-11-09-42-06-utc.jpg" alt="Atmosferă, lumină, confort">
+                    <div class="gallery-caption">
+                        <h4>Atmosferă</h4>
+                        <p>Confort și relaxare</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="in-a-modern-medical-center-dentistry-checks-the-r-2026-01-05-05-35-48-utc.jpg" alt="Consultatie stomatologică">
+                    <div class="gallery-caption">
+                        <h4>Consultatie</h4>
+                        <p>Diagnostic precis</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="a-closeup-shot-of-a-smiling-woman-showing-her-clea-2026-01-11-08-37-43-utc.jpg" alt="Zâmbet perfect">
+                    <div class="gallery-caption">
+                        <h4>Rezultate</h4>
+                        <p>Zâmbetul tău ideal</p>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="professional-team-of-dentists-and-assistants-posin-2026-01-07-01-01-37-utc.jpg" alt="Echipa medicilor">
+                    <div class="gallery-caption">
+                        <h4>Echipa</h4>
+                        <p>Specialiști în stomatologie</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="with-the-help-of-high-tech-equipment-and-expert-sk-2026-01-05-04-52-49-utc.jpg" alt="Tehnologie avansată">
+                    <div class="gallery-caption">
+                        <h4>Tehnologie</h4>
+                        <p>Instrumente moderne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimoniale" class="testimonials bg-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Recenzii</span>
+                <h2 class="section-title">Ce spun pacienții</h2>
+                <p class="section-description">Experiențe reale, din cabinet.</p>
+            </div>
+            
+            <div class="testimonials-stacked">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Soția a avut o urgență cu un aparat dentar montat în străinătate. După ce am fost refuzați de alte cabinete, la 5Dent au primit-o și au făcut ajustarea fără cost. Recomand cu încredere!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Marius+E&background=1a73e8&color=fff" alt="Marius E.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Marius E.</h4>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-details">
+                                    <i class="fas fa-map-marker-alt"></i> București
+                                </span>
+                                <span class="testimonial-details">
+                                    <i class="fas fa-tooth"></i> Urgență
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Un colectiv de oameni entuziaști și profesioniști, care înțeleg nevoile pacientului. Recomand!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Andra+G&background=1a73e8&color=fff" alt="Andra G.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Andra G.</h4>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-details">
+                                    <i class="fas fa-map-marker-alt"></i> București
+                                </span>
+                                <span class="testimonial-details">
+                                    <i class="fas fa-syringe"></i> Odontoterapie
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Am ajuns la cabinet în urma unei recomandări și am rămas. Familia și prietenii mei au venit la 5Dent și au fost foarte mulțumiți. Recomand cu încredere!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Andreea+C&background=1a73e8&color=fff" alt="Andreea C.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Andreea C.</h4>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-details">
+                                    <i class="fas fa-map-marker-alt"></i> București
+                                </span>
+                                <span class="testimonial-details">
+                                    <i class="fas fa-users"></i> Familia
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="programare" class="appointment">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-info">
+                    <span class="section-label">Programare</span>
+                    <h2>Programare rapidă</h2>
+                    <p>Completează formularul, iar noi revenim cu confirmarea. Simplu.</p>
+                    <p class="appointment-note">Confirmăm telefonic programarea.</p>
+                    <p class="appointment-note">Pentru urgențe, sună direct — răspundem cât de repede posibil.</p>
+                    <div class="appointment-details">
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>0752 271 755</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>office@5dent.ro</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresă</h4>
+                                <p>Str. Grâului 42, București</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment-form">
+                    <!-- What You Get Checklist -->
+                    <div class="what-you-get">
+                        <h3>Ce primești la prima vizită</h3>
+                        <ul class="what-you-get-list">
+                            <li class="what-you-get-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Evaluare completă a stării orale</span>
+                            </li>
+                            <li class="what-you-get-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Recomandări clare pe pași</span>
+                            </li>
+                            <li class="what-you-get-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Estimare de cost și durată</span>
+                            </li>
+                            <li class="what-you-get-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Opțiuni de tratament personalizate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">Nume și prenume</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviciu dorit</label>
+                            <select id="service" name="service">
+                                <option value="">Alege serviciul</option>
+                                <option value="implantologie">Implantologie</option>
+                                <option value="odontoterapie">Odontoterapie</option>
+                                <option value="endodontie">Endodonție</option>
+                                <option value="parodontologie">Parodontologie</option>
+                                <option value="ortodontie">Ortodonție</option>
+                                <option value="pedodontie">Pedodonție</option>
+                                <option value="urgenta">Urgență</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Spune-ne pe scurt ce te deranjează</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Trimite solicitarea</button>
+                        
+                        <!-- Risk Reducer -->
+                        <div class="trust-callout">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Confirmăm telefonic programarea în cel mai scurt timp</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Îți răspundem cu plăcere la orice întrebare.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresă</h4>
+                            <p>Str. Grâului 42, București</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.000000000001!2d26.080000000000004!3d44.430000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff89c6c87f8f%3A0x7c9b9b9b9b9b9b9b!2sStrada%20Gr%C3%A2ului%2042%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1600000000000!5m2!1sen!2sro" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>0752 271 755</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>office@5dent.ro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-hours">
+                <h4>Program de lucru</h4>
+                <div class="hours-list">
+                    <div class="hour-item">
+                        <span>Luni – Vineri</span>
+                        <span>09:00 – 21:00</span>
+                    </div>
+                    <div class="hour-item">
+                        <span>Sâmbătă</span>
+                        <span>10:00 – 18:00</span>
+                    </div>
+                    <div class="hour-item">
+                        <span>Duminică</span>
+                        <span>Închis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="logo.svg" alt="5Dent Logo" class="footer-logo">
+                        <span class="footer-brand-name">5Dent</span>
+                    </div>
+                    <p>5Dent — clinică stomatologică în București. Tratamente moderne, echipă cu experiență, grijă reală pentru confortul tău.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Navigare rapidă</h4>
+                    <ul>
+                        <li><a href="#home">Acasă</a></li>
+                        <li><a href="#servicii">Servicii</a></li>
+                        <li><a href="#despre">Despre noi</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#testimoniale">Recenzii</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Servicii</h4>
+                    <ul>
+                        <li><a href="#servicii">Implantologie</a></li>
+                        <li><a href="#servicii">Odontoterapie</a></li>
+                        <li><a href="#servicii">Endodonție</a></li>
+                        <li><a href="#servicii">Parodontologie</a></li>
+                        <li><a href="#servicii">Ortodonție</a></li>
+                        <li><a href="#servicii">Pedodonție</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Grâului 42, București</li>
+                        <li><i class="fas fa-phone"></i> 0752 271 755</li>
+                        <li><i class="fas fa-envelope"></i> office@5dent.ro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 5Dent. Toate drepturile rezervate.</p>
+                <div class="footer-links">
+                    <a href="#">Politica de confidențialitate</a>
+                    <a href="#">Termeni și condiții</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
