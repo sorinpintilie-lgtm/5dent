@@ -585,8 +585,8 @@ ul {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 120px;
+    height: auto;
 }
 
 .brand-name {
@@ -1634,8 +1634,8 @@ ul {
 }
 
 .footer-logo {
-    width: 40px;
-    height: 40px;
+    width: 120px;
+    height: auto;
 }
 
 .footer-brand-name {
